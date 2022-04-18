@@ -1,0 +1,8 @@
+stages:
+  complete-pypi:
+    cmd: datazimmer run-step complete-pypi
+    deps:
+    - src/pypi.py
+    outs:
+    - data/softwaredata/pypi/complete:
+        persist: true
