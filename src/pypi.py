@@ -4,7 +4,7 @@ import datazimmer as dz
 import pandas as pd
 
 
-class DownloadFeatures(dz.TableFeaturesBase):
+class PackageDownload(dz.AbstractEntity):
     timestamp = dt.datetime
     country_code = str
     project_name = str
@@ -22,7 +22,7 @@ class DownloadFeatures(dz.TableFeaturesBase):
     setuptools_version = str
 
 
-downloads_table = dz.ScruTable(DownloadFeatures)
+downloads_table = dz.ScruTable(PackageDownload)
 
 @dz.register_data_loader
 def load():
