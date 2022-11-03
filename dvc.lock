@@ -1,13 +1,13 @@
 schema: '2.0'
 stages:
   complete-pypi:
-    cmd: datazimmer run-step complete-pypi
+    cmd: dz run-step complete-pypi
     deps:
     - path: src/pypi.py
       md5: 1117d2d99985ef1a63ce87530befd8f2
       size: 756
     outs:
     - path: data/softwaredata/pypi/complete
-      md5: 7ede4152d49c0039bc14e5c4ee7da4aa.dir
-      size: 553420
+      md5: 9d0e90a02099253f483e7e8aa1f790f6.dir
+      size: 550147
       nfiles: 1

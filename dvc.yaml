@@ -1,6 +1,6 @@
 stages:
   complete-pypi:
-    cmd: datazimmer run-step complete-pypi
+    cmd: dz run-step complete-pypi
     deps:
     - src/pypi.py
     outs:
